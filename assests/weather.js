@@ -171,16 +171,16 @@ var finalforecast = function (data) {
      seconddiv.appendChild(title); 
 
      var temptext = document.createElement("p") 
-     temptext.innerHTML = (((daily.temp.day) - 273.15) * 9/5 + 32).toFixed(1) ;
+     temptext.innerHTML = "Temp: " + (((daily.temp.day) - 273.15) * 9/5 + 32).toFixed(1) ;
 
      seconddiv.appendChild(temptext); 
 
      var windtext = document.createElement("p") 
-     windtext.innerHTML = daily.wind_deg
+     windtext.innerHTML = "Wind: " + daily.wind_deg
      seconddiv.appendChild(windtext); 
 
      var humiditytext = document.createElement("p") 
-     humiditytext.innerHTML = daily.humidity
+     humiditytext.innerHTML = "Humidity: " + daily.humidity
      seconddiv.appendChild(humiditytext); 
 
      tomorrowsweather.appendChild(seconddiv)
